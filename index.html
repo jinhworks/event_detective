@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta property="og:title" content="🔍추석 연휴 숨은 위험 찾고 경품 받아가세요!">
   <meta property="og:description" content="9/17~9/29 에스원과 함께하는 추석 이벤트. 숨은 위험을 찾고 경품을 받아가세요!">
-  <meta property="og:image" content="https://raw.githubusercontent.com/jinhworks/event_detective/main/event-og.png">
+  <meta property="og:image" content="https://raw.githubusercontent.com/jinhworks/event_detective/main/Group_22.png">
   <meta property="og:url" content="https://jinhworks.github.io/event_detective/">
   <meta property="og:type" content="website">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,11 +27,14 @@
     const params = new URLSearchParams(window.location.search);
     const source = params.get('utm_source');
     
-    let redirectUrl = 'https://www.instagram.com/s1corporation/'; // 기본값
+    // 파라미터 전체 가져오기 (UTM 유지용)
+    const allParams = window.location.search;
     
-    // knox만 설문으로
+    let redirectUrl = 'https://www.instagram.com/s1corporation/' + allParams; // 기본값 (utm 유지)
+    
+    // knox만 설문으로 (utm 유지)
     if (source === 'knox') {
-      redirectUrl = 'https://naver.me/GVVn0Feg';
+      redirectUrl = 'https://naver.me/GVVn0Feg' + allParams;
     }
     
     setTimeout(function() {
