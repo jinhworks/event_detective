@@ -23,8 +23,19 @@
 <body>
   잠시 후 이벤트 페이지로 이동합니다...
   <script>
+    // URL에서 utm_source 값 읽기
+    const params = new URLSearchParams(window.location.search);
+    const source = params.get('utm_source');
+    
+    let redirectUrl = 'https://www.instagram.com/s1corporation/'; // 기본값
+    
+    // knox만 설문으로
+    if (source === 'knox') {
+      redirectUrl = 'https://naver.me/GVVn0Feg';
+    }
+    
     setTimeout(function() {
-      window.location.href = 'https://www.instagram.com/s1corporation/';
+      window.location.href = redirectUrl;
     }, 2000);
   </script>
 </body>
