@@ -15,8 +15,8 @@ title: 🔍추석 연휴 숨은 위험 찾고 경품 받아가세요!
 잠시 후 이벤트 페이지로 이동합니다...
 
 <script>
-  // 이곳에 실제 이벤트 페이지 URL 입력
+  // https://www.instagram.com/s1corporation/
   setTimeout(function() {
-    window.location.href = 'https://s1.com/event'; // 변경 필요
+    window.location.href = 'https://www.instagram.com/s1corporation/'; // 변경 필요
   }, 2000);
 </script>
