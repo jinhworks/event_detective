@@ -37,9 +37,11 @@
       redirectUrl = 'https://naver.me/GVVn0Feg' + allParams;
     }
     
+    // GA가 충분히 기록할 수 있도록 5초 대기
     setTimeout(function() {
       window.location.href = redirectUrl;
-    }, 2000);
+    }, 5000);
   </script>
 </body>
 </html>
+ 
